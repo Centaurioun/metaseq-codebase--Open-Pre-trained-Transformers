@@ -135,21 +135,21 @@ def do_setup(package_data):
         install_requires=[
             # protobuf version pinned due to tensorboard not pinning a version.
             #  https://github.com/protocolbuffers/protobuf/issues/10076
-            "protobuf==3.20.2",
+            "protobuf==7.34.0rc1",
             "aim>=3.9.4",
             "azure-storage-blob",
             "boto3",
-            "black==22.3.0",
+            "black==24.3.0",
             "click==8.0.4",
             "cython",
             'dataclasses; python_version<"3.7"',
             "editdistance",
             "fire",
-            "flask==2.1.1",  # for api
+            "flask==2.2.5",  # for api
             "hydra-core>=1.1.0,<1.2",
             "ipdb",
             "ipython",
-            "Jinja2==3.1.1",  # for evals
+            "Jinja2==3.1.6",  # for evals
             "markupsafe",  # for evals
             "more_itertools",
             "mypy",
@@ -182,7 +182,7 @@ def do_setup(package_data):
         extras_require={
             "dev": [
                 "flake8",
-                "black==22.3.0",
+                "black==24.3.0",
                 # test deps
                 "iopath",
                 "transformers",
